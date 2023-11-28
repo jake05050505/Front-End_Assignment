@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<body style="margin:0;">
+    <imported>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </imported>
+    <head><title>Project site</title>
+        <script>
+            const User1={ 
+                User:"Jake",
+                passwd:"Jakespass",
+            } /* Defines an object User1 */
+            Users=[User1] /* Defines a list of users using the object(s) defined above */
+            function checkuser(Users,username_input,password_input){
+                for (let i=0; i < Users.length; i++){
+                    if (username_input == Users[i].User){
+                        if (password_input == Users[i].passwd){
+                            document.write("Access granted")
+                            var loggedin = true;
+                            var Username = Users[i].User;
+                        } else{
+                            document.write("The username or password is incorrect")
+                        }
+                    } else{
+                        document.write("The username or password is incorrect")
+                    }
+                }
+            }
+        </script>
+    </head>
+    <header>
+        <div id="grad1" class="container" style="border:0;position:sticky;top:0;margin:0;z-index:1;padding:0">
+            <img src="TNK.png" height="100px" width="100px"></img>
+
+            <a href="HomePage.html">
+                <h2 class="header2">Home</h2>
+            </a>
+            
+            <h2 class="header2" style="left:9.7em;top:1.6em">&#8226;</p>
+            <a href="ShopPage.html">
+                <h2 class="header2" style="left:1em;top:-1.8em;">Shop</h2>
+            </a>
+            <div style="position:absolute;top:-12px;right:-64vw;">
+                <script>
+                    if (loggedin==true){
+                        document.write("Hello,"+Username)
+                    } else{
+                        document.write("You aren't logged in.")
+                    }
+                </script>
+            </div>
+            <p class="header2" style="left:4.3em;top:-0em">&#8226;</p>
+        </div>
+    </header>
+    <main>
+        <form name="loginform">
+            <input type="text" name="username_input" id="login" required pattern="i*[a-zA-Z0-9]{1,}" placeholder="Username:"><br>
+            <input type="text" name="password_input" id="login" required pattern="[a-zA-Z0-9]{1,}" placeholder="Password:"><br>
+            <input type="submit" id="login">
+        </form>
+    </main>
+
+    <footer>
+        <p href="Contact" style="color: #babfc4;position:relative;left:1em;top:-0.5em">
+            Contact Us
+        </p>
+        <a href="AboutPage.html" style="color:#838c95;">
+            About
+        </a>
+    </footer>
+</body>
+</html>
