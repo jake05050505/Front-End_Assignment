@@ -1,74 +1,77 @@
 .header2{
     font-family:'Ubuntu',sans-serif;
     position:absolute;
-    top:34px;
-    left:40px;
+    top: 34px;
+    left: 40px;
     color:black;
     font-size: 24px;
 }
 .container{
-    margin:10px;
-    margin-left:0px;
-    margin-right:0px;
-    padding:5px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
     background-color:#fff;
-    display:flex;
-    border-radius:0;
-    border:1px solid black;
-    width:auto;
+    display: flex;
+    border-radius: 0;
+    border: 1px solid black;
+    width: auto;
 }
 a{
-    border-radius:5px;
-    width:fit-content;
-    position:relative;
-    margin:5px;
+    border-radius: 5px;
+    width: fit-content;
+    position: relative;
+    margin: 5px;
 }
 body{
-    min-height:100vh;
+    min-height: 100vh;
     /*flex-direction:column*/
 }
 footer{
-    margin-top:90%;
+    margin-top: 90%;
     background-color: #242729;
     color:white;
-    height:100px;
-    font-family:'Heebo',sans-serif;
-    width:100%;
-    padding:5px;
-    position:fixed;
-    bottom:0;
+    height: 100px;
+    font-family: 'Heebo',sans-serif;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
 }
 #grad1{
-    height:10vh;
+    height: 10vh;
     background-color:rgb(255, 255, 255);
     background-image: linear-gradient(105deg, rgb(255, 255, 255) 2em,rgba(0, 80, 255, 0.5));
-    min-width:100%;
-    min-height:100px;
+    min-width: 100%;
+    min-height: 100px;
 }
 
 input{
-    height:4vh;width: 100vw;
+    height: 4vh;
+    width: 100vw;
 }
 #login{
-    width:auto;
-    height:auto;
+    width: auto;
+    height: auto;
 }
 
 /*ShopPage only*/
 .card{
     border: 1px solid #242729;
     border-radius: 4px;
-    min-width:250px;
-    height:480px;
+    min-width: 250px;
+    height: 480px;
     max-width: 250px;
-    margin:0.2em;margin-bottom:100px;
+    margin: 0.2em; margin-bottom: 100px;
     @media screen and (max-width:400px){
-        width:250px;
-        height:90vh;
+        width: 250px;
+        height: 90vh;
     }
 }
 #wrapper{
-    min-width:100vw;
+    min-width: 100vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +82,21 @@ input{
 .background{
     background-color:#dcfff8;
     opacity: 30%;
-    width: 70vh;height:40vh;
+    width: 70vh;
+    height:40vh;
     flex: none;
     border-radius: 10px;
 }
 .homelinks{
-    font-size:2.5em;
+    font-size: 2em;
+    position: relative;
+    top:-1em;
+}
+
+/*SupportPage*/
+#searchresult{
+    width: auto;
+    height: auto;
+    border: 2px solid #242729;
+    margin:2px;
 }
