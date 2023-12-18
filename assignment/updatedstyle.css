@@ -1,0 +1,66 @@
+/*Tags*/
+body,header,main,footer{
+   margin: 0;
+}
+html,body{
+   min-height:101%;
+   font-family: 'Heebo',sans-serif;
+}
+header{
+   position: sticky;
+   background-image: linear-gradient(105deg, rgb(255, 255, 255) 2em,rgba(0, 80, 255, 0.5));
+}
+main{
+   padding-left: 10px;
+   min-height: 84vh;
+}
+footer{
+   background-color: #242729;
+   bottom: calc(0 - 100px);
+   margin-top: auto;
+   position: absolute;
+   min-height: 80px;
+   width: 100%;
+   padding: 20px;
+   padding-top: 10px;
+}
+/*Classes*/
+.container{
+   display: flex;
+   margin: 0;
+}
+.header{
+   margin-top: 1.2em;
+   margin-left: 0.4em;
+   color: black;
+   text-wrap: nowrap;
+}
+.noul{
+   text-decoration: none;
+}
+.ul{
+   text-decoration: underline;
+}
+.bl{
+   color: black;
+}
+.card{
+   border: 1px solid #242729;
+   border-radius: 3px;
+   width: 250px;
+   margin: 5px;
+   padding: 4px;
+}
+.searchresult{
+   width: auto;
+   height: auto;
+   border: 2px solid #242729;
+   margin:2px;
+}
+/*IDs*/
+#wrapper{
+   min-width: 100vw;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+}
