@@ -61,6 +61,10 @@ footer{
    color: #babfc4;
 
 }
+.shopimg{
+   position: relative;
+   border: 1px solid black;
+}
 /*IDs*/
 #wrapper{
    min-width: 100vw;
