@@ -1,4 +1,7 @@
 /*Tags*/
+/*html{
+   color-scheme:light dark; Kevin Powell, Youtube, https://www.youtube.com/shorts/ydGti7sLVOc
+}*/
 body,header,main,footer{
    margin: 0;
 }
@@ -13,6 +16,7 @@ header{
 main{
    padding-left: 10px;
    min-height: 84vh;
+   line-height: 1.25;
 }
 footer{
    background-color: #242729;
