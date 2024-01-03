@@ -2,7 +2,7 @@
 :root{ /* https://ado.xyz/blog/custom-css-color-names/ */
    --lgrey: #babfc4;
    --dgrey: #242729;
-   --blue50: rgba(0, 0, 255, 0.5);
+   --blue25: rgba(0, 0, 255, 0.25);
 }
 /*Tags*/
 /*html{
@@ -19,7 +19,7 @@ html,body{
 }
 header{
    position: sticky; /* Not sticking, unimportant, won't be fixed */
-   background-image: linear-gradient(105deg, white 2em, var(--blue50));
+   background-image: linear-gradient(105deg, white 2em, var(--blue25));
    border-bottom: 1px solid var(--dgrey);
 }
 main{
@@ -64,6 +64,9 @@ footer{
    margin: 5px;
    padding: 4px;
 }
+.card:hover{
+   border: 2px solid black;
+}
 .searchresult{
    width: auto;
    height: auto;
@@ -76,6 +79,17 @@ footer{
 .shopimg{ /* Shop only */
    position: relative;
    border: 1px solid black;
+}
+.button15,.button30{
+   border-radius: 3px;
+}
+.button15:hover{
+   background-color: rgba(0, 125, 255, 0.15);
+   text-decoration: underline;
+}
+.button30:hover{
+   background-color: rgba(0, 125, 255, 0.30);
+   text-decoration: underline;
 }
 /*IDs*/
 #wrapper{
