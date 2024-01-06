@@ -18,7 +18,7 @@ html,body{
    overflow-x: hidden; /* See above link */
 }
 header{
-   position: sticky; /* Not sticking, unimportant, won't be fixed */
+   position: sticky; /* Not sticking, difference is only visual, won't be fixed */
    background-image: linear-gradient(105deg, white 2em, var(--blue25));
    border-bottom: 1px solid var(--dgrey);
 }
@@ -48,7 +48,7 @@ footer{
    color: black;
    text-wrap: nowrap;
 }
-.noul{
+.noul{ /* Abbreviation of "no underline" */
    text-decoration: none;
 }
 .ul{
@@ -56,6 +56,9 @@ footer{
 }
 .bl{
    color: black;
+}
+.lg{
+   color: var(--lgrey);
 }
 .card{ /* Shop only */
    border: 1px solid var(--dgrey);
@@ -66,19 +69,17 @@ footer{
 }
 .card:hover{
    border: 2px solid black;
+   padding: 3px;
+}
+.shopimg{ /* Shop only */
+   position: relative;
+   border: 1px solid black;
 }
 .searchresult{
    width: auto;
    height: auto;
    border: 2px solid var(--dgrey);
    margin:2px;
-}
-.lg{
-   color: var(--lgrey);
-}
-.shopimg{ /* Shop only */
-   position: relative;
-   border: 1px solid black;
 }
 .button15,.button30{
    border-radius: 3px;
